@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <i class="fas fa-shopping-cart"></i>
+    <nav id="navigation">
+        <div class="wrapper">
+            <a class="logo" href="#games">
+                <img src="./img/attachment_134655872.jfif" alt="
+                " / id="icon">
+                
+                <h3>Wonderland</h3>
+            </a>
+
+            <div class="menu">
+                <nav>
+
+                    <ul>
+                        <li><a onclick="closeMenu()" href="index.html">Games</a></li>
+                        <li><a onclick="closeMenu()" href="contato.html">Contact</a></li>  
+                        <div class="cart-items">
+                            <h3>para acessar o carrinho</h3>
+                            <ul></ul>
+                            <p>clique aqui<span id="cart-total"> <a href="carrinho.html"><img class="carr" src="./img/carrinho.png" alt=""></a> </span></p>
+                          </div>
+                    </ul>
+                    
+                    
+                </a>
+            </nav>
+
+          </div>
+
+            <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" 
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" 
+                    stroke-linejoin="round"/>
+                    <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" 
+                    stroke-linejoin="round"/>
+                    <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" 
+                    stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" 
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" 
+                    stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+	<main>
+		<section>
+			<h2 id="carrin">Seu carrinho</h2>
+			<ul id="carrinho">
+			</ul>
+			<p id="total">Total: R$ 0,00</p>
+            <li><a onclick="closeMenu()"><button class="BOT" id="finalizar">Finalizar Compra</button></a></li>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Wonderland.inc - Todos os direitos reservados</p>
+	</footer>
+
+	<script type="text/javascript" src="script.js"></script>
+
+	<script src="script.js"></script>
+</body>
+</html>
